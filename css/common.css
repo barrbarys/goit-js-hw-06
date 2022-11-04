@@ -1,24 +1,51 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
-  line-height: 1.5;
+	margin: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #fafafa;
+	color: #212121;
+	line-height: 1.5;
 }
 
 input {
-  padding: 8px;
-  font: inherit;
+	padding: 8px;
+	font: inherit;
 }
 
 button {
-  padding: 8px 12px;
-  cursor: pointer;
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.gallery {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 100%;
+}
+
+.item {
+	display: flex;
+	width: 375px;
+	padding: 20px;
+	border: 2px solid tomato;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #8f8f8f;
+}
+
+.img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	background-color: rgba(248, 238, 238, 0.63);
+	object-fit: contain;
+	object-position: center;
 }
