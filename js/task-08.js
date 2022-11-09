@@ -9,9 +9,9 @@ function checkLogin(event) {
   if (email.value === "" || password.value === "") {
     return alert("Потрібно заповнити всі поля");
   }
-  const userData = { email: email.value, Password: password.value };
+  const userData = { email: email.value, password: password.value };
 
-  console.log("Email:", userData.email);
-  console.log("Password:", userData.Password);
-  event.target.reset();
+  console.log(userData);
+
+  event.currentTarget.reset();
 }
